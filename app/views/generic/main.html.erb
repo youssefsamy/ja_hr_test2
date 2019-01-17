@@ -1,0 +1,1332 @@
+<!--Section: Candidate Number -->
+<div class="container">
+	<form action="/createAnswer" id="form" method="post">
+		<div class="tab">
+			<div class="section section1">
+				<h1 class="section-title">
+					Candidate 1001
+					<div class="small">I am an aspiring <b>Accountant</b></div>
+				</h1>
+				<div class="section-container">
+					<div class="row">
+
+						<div class="col-md-6">
+							21 years old
+
+							<div class="question-wrapper">
+								<div class="question">Q1: How important is jobseeker's Date of Birth before you call him/her for interview?</div>
+								<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+								<select id="q1" name="q1">
+									<option value="1">1 (IRRELEVANT) </option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (VERY IMPORTANT) </option>
+								</select>
+							</div>
+							<!-- Add Q(1-5): How important is jobseeker's Date of Birth before you call him/her for interview? -->
+						</div>
+
+						<div class="col-md-6">
+							<div class="media">
+								<%=image_tag("profile.png", :class => "mr-3 profile-image")%>
+									<div class="media-body">
+										<div class="question-wrapper">
+											<div class="question">Q2: How important is jobseeker's photo before you call him/her for interview?</div>
+											<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+											<select id="q2" name="q2">
+											<option value="1">1 (IRRELEVANT) </option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5 (VERY IMPORTANT) </option>
+										</select>
+										</div>
+									</div>
+							</div>
+
+
+							<!-- Add random passport photo of a guy with blurred face at top left or top right -->
+							<!-- Add Q(1-5): How important is jobseeker's photo before you call him/her for interview? -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Notes to developer:
+		1.Must be centre and at the top
+		2.Must be big and clear
+		3.Highlight "Accountant" -->
+
+			<!--Section: Personal Details -->
+			<div class="section section2">
+				<h1 class="section-title">Personal Details</h1>
+				<div class="section-container">
+					<div class="row">
+						<div class="col-md-4">
+							<b>Contact Details:</b>
+							<div>Current Address: (<a href="#">Unlock to see info</a>)</div>
+							<div>017-xxxxxxx (<a href="#">Unlock to see info</a>)</div>
+							<div>xxxxxxx@gmail.com (<a href="#">Unlock to see info</a>)</div>
+						</div>
+						<div class="col-md-4">
+							<b>Social Media Profiles</b> (<a href="#">Unlock to see info</a>):
+							<div class="row mt-4">
+								<div class="col-md-4 text-center">
+									<!-- Add Facebook Icon with URL targetting blank -->
+									<a href="#"><%=image_tag("facebook.png", :class => "social-image")%></a>
+								</div>
+								<div class="col-md-4 text-center">
+									<!-- Add Twitter Icon with URL targetting blank -->
+									<a href="#"><%=image_tag("twitter.png", :class => "social-image")%></a>
+								</div>
+								<div class="col-md-4 text-center">
+									<!-- Add Linkedin Icon with URL targetting blank -->
+									<a href="#"><%=image_tag("linkedin.png", :class => "social-image")%></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<b class="large">"Fresh graduate with clear interest in Accounting & Finance. Beyond academic qualifications, I also practised my knowledge
+					in real life scenario through internships and student activities."</b>
+							<!-- Must be centre and text to be bold/bigger/clearer than any other text in the sections -->
+						</div>
+					</div>
+					<!-- Q(1-5): Which of these information are not necessary before you shortlist them for interview.
+						Radio Button:
+						Current Address
+						Mobile number
+						Email address
+						Facebook Profile
+						Twitter Profile
+						Linkedin Profile
+						Executive Summary Paragraph
+						Everything is necessary -->
+					<div class="question-wrapper large">
+						<div class="question">Q3: Which of these information are not necessary before you shortlist them for interview?</div>
+
+						<input name="q3" id='q3' type="hidden">
+
+						<div class="row">
+							<div class="col-md-3">
+								<input type="checkbox" name="q3_1" value="Current Address" id="q3_1"> Current Address
+							</div>
+							<div class="col-md-3">
+								<input type="checkbox" name="q3_2" value="Mobile number" id="q3_2"> Mobile number
+							</div>
+
+							<div class="col-md-3">
+								<input type="checkbox" name="q3_3" value="Email address" id="q3_3"> Email address
+							</div>
+
+							<div class="col-md-3">
+								<input type="checkbox" name="q3_4" value="Facebook Profile" id="q3_4"> Facebook Profile
+							</div>
+
+							<div class="col-md-3">
+								<input type="checkbox" name="q3_5" value="Twitter Profile" id="q3_5"> Twitter Profile
+							</div>
+
+							<div class="col-md-3">
+								<input type="checkbox" name="q3_6" value="Linkedin Profile" id="q3_6"> Linkedin Profile
+							</div>
+
+							<div class="col-md-3">
+								<input type="checkbox" name="q3_7" value="Executive Summary Paragraph" id="q3_7"> Executive Summary Paragraph
+							</div>
+
+							<div class="col-md-3">
+								<input type="checkbox" name="q3_8" value="Everything is necessary" id="q3_8"> Everything is necessary
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tab">
+			<!--Section: Academic Details -->
+			<div class="section section3">
+				<h1 class="section-title">Academic Details</h1>
+				<div class="section-container">
+					<div class="row">
+						<div class="col-md-4">
+							<div><b>Highest Academic Achievement</b> </div>
+							<div>Bachelor of Accounting</div>
+							<div>University Malaya</div>
+							<div>Kuala Lumpur</div>
+							<div>Start Year: July 2016</div>
+							<div class="question-wrapper">
+								<div class="question">Q4: How important is this data when you are shortlisting for interview?</div>
+								<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+								<select id="q4" name="q4">
+										<option value="1">1 (IRRELEVANT) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (VERY IMPORTANT) </option>
+						</select>
+							</div>
+							<!-- Q(1-5):How important is this data when you are shortlisting for interview? -->
+							<div>Expected Graduation Date: August 2019</div>
+							<div class="question-wrapper">
+								<div class="question">Q5: How important is this data when you are shortlisting for interview?</div>
+								<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+								<select id="q5" name="q5">
+										<option value="1">1 (IRRELEVANT) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (VERY IMPORTANT) </option>
+							</select>
+							</div>
+							<!-- Q(1-5):How important is this data when you are shortlisting for interview? -->
+						</div>
+						<div class="col-md-4">
+							<b>Best Papers:</b>
+							<div>
+								<div>Cash Flow Management</div>
+								<div>Taxation</div>
+								<div>Financial Modelling</div>
+							</div>
+
+							<div class="question-wrapper">
+								<div class="question">Q6: How important are Best Papers when you are shortlisting for interview?</div>
+								<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+								<select id="q6" name="q6">
+										<option value="1">1 (IRRELEVANT) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (VERY IMPORTANT) </option>
+						</select>
+							</div>
+							<!-- Q(1-5):How important are Best Papers when you are shortlisting for interview? -->
+
+							<div class="question-wrapper">
+								<div class="question">Q7: How important is the score for each Best Papers when you are shortlisting for interview?</div>
+								<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+								<select id="q7" name="q7">
+										<option value="1">1 (IRRELEVANT) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (VERY IMPORTANT) </option>
+						</select>
+							</div>
+							<!-- Q(1-5):How important is the score for each Best Papers when you are shortlisting for interview? -->
+						</div>
+						<div class="col-md-4">
+							<div><b>Academic Grade:</b></div>
+							<div>Latest CGPA: 3.20</div>
+							<div>Expected CGPA: 3.50</div>
+						</div>
+					</div>
+
+					<div class="question-wrapper large">
+						<div class="question">Q8: Is there any other Academic information you require when you are shortlisting for interview?</div>
+						<textarea id="q8" name="q8"></textarea>
+					</div>
+					<!-- Q(Open): Is there any other Academic information you require when you are shortlisting for interview? (Open field) -->
+				</div>
+
+			</div>
+		</div>
+
+		<div class="tab">
+
+			<!--Section: Working Experience -->
+			<div class="section section4">
+				<h1 class="section-title">Work Readiness</h1>
+				<div class="section-container">
+					<div class="row mb-3">
+						<div class="col-md-4">
+							<b>PricewaterhouseCoopers (PwC)</b>
+							<div class="small mt-2">One of the big four audit, assurance, consulting & tax firms globally</div>
+							<!--Smaller font in relative to previous and proceeding Div -->
+							<div class="small mt-2">
+								<div>Kuala Lumpur</div>
+								<!-- Q(1-5): How important is state of company when you are shortlisting for interview? -->
+								<div class="question-wrapper">
+									<div class="question">Q9: How important is state of company when you are shortlisting for interview?</div>
+									<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+									<select id="q9" name="q9">
+											<option value="1">1 (IRRELEVANT) </option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5 (VERY IMPORTANT) </option>
+							</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div>Intern</div>
+							<div class="mt-2">Department: Assurance
+								<!-- Q(1-5): How important is department when you are shortlisting for interview? -->
+								<div class="question-wrapper">
+									<div class="question">Q10: How important is department when you are shortlisting for interview?</div>
+									<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+									<select id="q10" name="q10">
+											<option value="1">1 (IRRELEVANT) </option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5 (VERY IMPORTANT) </option>
+							</select>
+								</div>
+							</div>
+							<div class="mt-2">June 2018 - September 2018</div>
+						</div>
+						<div class="col-md-5">
+							<div class="card p-3">
+								<b>Key Learnings:</b>
+								<div class="small">
+									<div class="mt-2">1.I learned about the application of my academic study into real world situation, especially in big audit engagement.</div>
+									<div class="mt-2">2.As this is my first time working in a big company, I learned to follow the organised structure as an intern.</div>
+								</div>
+								<!-- Q(1-5)How important are Key Learninggs when you are shortlisting for interview? -->
+								<div class="question-wrapper">
+									<div class="question">Q11: How important are Key Learninggs when you are shortlisting for interview?</div>
+									<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+									<select id="q11" name="q11">
+											<option value="1">1 (IRRELEVANT) </option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5 (VERY IMPORTANT) </option>
+									</select>
+								</div>
+							</div>
+							<div class="mt-2 card p-3">
+								<b>Key Outcome Achieved:</b>
+								<div class="small">
+									<div class="mt-2">1.Part of the team that services one of the biggest GLCs in Malaysia</div>
+									<div class="mt-2">2.Organises a feedback mechanism for interns to let PwC know how to improve their internship programme.</div>
+								</div>
+								<!-- Q(1-5)How important are Key Outcome Achieved when you are shortlisting for interview? -->
+								<div class="question-wrapper">
+									<div class="question">Q12: How important are Key Outcome Achieved when you are shortlisting for interview?</div>
+									<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+									<select id="q12" name="q12">
+											<option value="1">1 (IRRELEVANT) </option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5 (VERY IMPORTANT) </option>
+							</select>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="row mt-3 mb-3">
+						<div class="col-md-4">
+							<b>Abu Chong Tax Advisory</b>
+							<div class="small class=" mt-2 "">Tax advisory service for startups</div>
+							<!--Smaller font in relative to previous and proceeding Div -->
+							<div class="small class=" mt-2 "">Ampang, Selangor</div>
+						</div>
+						<div class="col-md-3">
+							<div>Intern</div>
+							<div class="mt-2">Department: General</div>
+							<div class="mt-2">July 2017 - September 2017</div>
+						</div>
+						<div class="col-md-5">
+							<div class="card p-3">
+								<b>Key Learnings:</b>
+								<div class="small">
+									<div class="mt-2">1.I learned the importance of Microsoft Excel & Word as I was asked to put some hardcopy data into digital data.</div>
+									<div class="mt-2">2.I learned that tax advisory is Malaysia is totally dependant on the latest tax structure. The ultimate goal for
+										any tax advisor is to reduce unnecessary tax payment without breaking the law.</div>
+								</div>
+							</div>
+							<div class="mt-2 card p-3">
+								<b>Key Outcome Achieved:</b>
+								<div class="small">
+									<div class="mt-2">1.Digitalised the documents related to customers' case history and the firm human resource documentation.</div>
+									<div class="mt-2">2.Part of the team that secured 2 new clients for the firm by pitching our corporate deck.</div>
+								</div>
+							</div>
+							<!-- Q(RadioButton): Which of this info is more important when you are shortlisting for interview? 
+				Key Learnings
+				Key Outcome Achieved
+				Equally important -->
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="row mt-3">
+						<!--Front End wise, please distinguish this from the first 2 working experience -->
+						<div class="col-md-4">
+							<b>Majlis Perwakilan Pelajar Universiti Malaya</b>
+						</div>
+						<div class="col-md-3">
+							<div>Treasurer</div>
+							<div class="mt-2">September 2017 - August 2018</div>
+						</div>
+						<div class="col-md-5">
+							<div class="card p-3">
+								<b>Key Activity:</b>
+								<div class="small">
+									<div>1.Manage the accounting and finances of the association, including bookkeping and financial report.</div>
+									<div class="mt-2">2.Find and meet potential sponsors to get money into the organisation for our events and programmes.</div>
+								</div>
+							</div>
+						</div>
+						<!-- Q(RadioButton): Would you consider this experience as part of working experience?
+					Yes it is part of working experience
+					No this is not part of working experience -->
+
+						<div class="col-12 question-wrapper">
+							<div class="question">Q13: Would you consider this experience as part of working experience?</div>
+							<div class="answer">A: Please select one</div>
+
+							<select id="q13" name="q13" style="max-width: 500px">
+						<option value="Yes">Yes</option>
+						<option value="No">No</option>
+					</select>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+
+		<div class="tab">
+			<!--Section: References-->
+			<div class="section section5">
+				<h1 class="section-title">References</h1>
+				<div class="section-container">
+					<div class="row">
+						<div class="col-md-6">
+							<div>xxxx xxxxxx (<a href="#">Unlock to see name</a>)
+								<!-- Q(1-5):How important it is that you see the full name of referee when you are shortlisting for interview? -->
+								<div class="question-wrapper">
+									<div class="question">Q14: How important it is that you see the full name of referee when you are shortlisting for interview?</div>
+									<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+									<select id="q14" name="q14">
+											<option value="1">1 (IRRELEVANT) </option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5 (VERY IMPORTANT) </option>
+									</select>
+								</div>
+							</div>
+
+						</div>
+						<div class="col-md-6">
+							<div>xxxx xxxxxx (<a href="#">Unlock to see name</a>)</div>
+						</div>
+					</div>
+					<div class="row mt-5">
+						<div class="col-md-6">
+							<div class="mt-2">Senior Associate, PwC</div>
+
+						</div>
+						<div class="col-md-6">
+
+							<div class="mt-2">Lecturer, Universiti Malaya</div>
+
+						</div>
+					</div>
+
+					<div class="row mt-5">
+						<div class="col-md-6">
+
+							<div class="mt-2">Candidate was a proactive intern that is always eager to be given any task or assignment. Candidate also showed huge
+								interest on the application of what he learned in university to the real world. Based on the group task given, candidate
+								showed his ability to work in a group despite his obvious preference to work alone.
+							</div>
+						</div>
+						<div class="col-md-6">
+
+							<div class="mt-2">Candidate is a hardworking student with a huge passion in taxation. Based on candidate's coursework, candidate showed...(Unlock
+								to see all)
+								<!-- Q(1-5):How important it is that you see the full comment by referee when you are shortlisting for interview? -->
+								<div class="question-wrapper">
+									<div class="question">Q15: How important it is that you see the full comment by referee when you are shortlisting for interview?</div>
+									<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+									<select id="q15" name="q15">
+													<option value="1">1 (IRRELEVANT) </option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5 (VERY IMPORTANT) </option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Q(Radio): Not having referee at this stage will not affect how I view this Jobseeker.
+					Yes
+					No -->
+
+					<div class="question-wrapper large">
+						<div class="question">Q16: Not having referee at this stage will not affect how I view this Jobseeker?</div>
+						<div class="answer">A: Please select one</div>
+
+						<select id="q16" name="q16" style="max-width: 500px">
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</select>
+					</div>
+
+					<!-- Q(Open):What will help make you trust the referee comments above? -->
+
+
+					<div class="question-wrapper large">
+						<div class="question">Q17: What will help make you trust the referee comments above?</div>
+						<textarea id="q17" name="q17"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tab">
+			<!--Section: Skills-->
+			<div class="section section6">
+				<h1 class="section-title">Skills</h1>
+				<div class="section-container">
+					<div class="mb-3">
+						<h4 class="text-center">Hard Skills</h4>
+						<div class="row">
+							<div class="col-md-4">
+								<b>Microsoft Excel</b>
+								<div>See my portfolio: (<a href="#"><%=image_tag("excel.png", :class => "small-logo")%></a>)
+									<!-- Q(1-5):How important is hardskill portfolio when you are shortlisting for interview? -->
+
+									<div class="question-wrapper">
+										<div class="question">Q18: How important is hardskill portfolio when you are shortlisting for interview?</div>
+										<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+										<select id="q18" name="q18">
+												<option value="1">1 (IRRELEVANT) </option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5 (VERY IMPORTANT) </option>
+								</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<b>Microsoft Powerpoint</b>
+								<div>Self-rating:(<a href="#"><%=image_tag("4outof5.png", :class => "small-logo")%></a>)
+									<!-- Q(1-5):How important is hardskill self-rating when you are shortlisting for interview? -->
+
+									<div class="question-wrapper">
+										<div class="question">Q19: How important is hardskill self-rating when you are shortlisting for interview?</div>
+										<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+										<select id="q19" name="q19">
+												<option value="1">1 (IRRELEVANT) </option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5 (VERY IMPORTANT) </option>
+								</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<b>Microsoft Word</b>
+								<div>Training Includes:
+									<div>University Malaya Microsoft Bootcamp</div>
+									<div>Coursera: Microsoft Word short course
+										<!-- Q(1-5):How important is hardskill training history when you are shortlisting for interview? -->
+
+										<div class="question-wrapper">
+											<div class="question">Q20: How important is hardskill training history when you are shortlisting for interview?</div>
+											<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+											<select id="q20" name="q20">
+													<option value="1">1 (IRRELEVANT) </option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5 (VERY IMPORTANT) </option>
+									</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Q(1-5):How important is Hard Skills info when you are shortlisting for interview? -->
+
+						<div class="question-wrapper large">
+							<div class="question">Q21: How important is Hard Skills info when you are shortlisting for interview?</div>
+							<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+							<select id="q21" name="q21" style="max-width: 500px">
+									<option value="1">1 (IRRELEVANT) </option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5 (VERY IMPORTANT) </option>
+							</select>
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="mt-3">
+						<h4 class="text-center">Soft Skills</h4>
+						<div class="row">
+							<div class="col-md-4">
+								<b>Watch me sell a ballpen in 1 minute!</b>
+								<div>
+									(<a href="#"><%=image_tag("youtube.png", :class => "small-logo")%></a>)
+								</div>
+								<!-- Q(Radio):Does video of candidate selling a ballpoint helps you determine his/her speaking ability?
+						Yes
+						No -->
+								<div class="question-wrapper">
+									<div class="question">Q22: Does video of candidate selling a ballpoint helps you determine his/her speaking ability?</div>
+									<div class="answer">A: Please select one</div>
+
+									<select id="q22" name="q22" style="max-width: 500px" onchange="toggleQuestion(this, 'q22_text_wrapper')">
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select>
+								</div>
+								<!-- If answer is no, show openfield with label: Please suggest what can help you determine his/her speaking ability? -->
+								<div class="question-wrapper" style="display: none" id="q22_text_wrapper">
+									<div class="question">Please suggest what can help you determine his/her speaking ability</div>
+									<textarea id="q22_text" name="q22_text"></textarea>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<b>Read my email to ask for a presentation slot!</b>
+								<div>
+									The unique selling point of my product is ...(<a href="#">Click to see more</a>)
+								</div>
+								<!-- Q(Radio):Does email of candidate asking for presentation slot helps you determine his/her writing ability?
+						Yes
+						No -->
+								<div class="question-wrapper">
+									<div class="question">Q23: Does email of candidate asking for presentation slot helps you determine his/her writing ability?</div>
+									<div class="answer">A: Please select one</div>
+
+									<select id="q23" name="q23" style="max-width: 500px" onchange="toggleQuestion(this, 'q23_text_wrapper')">
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select>
+								</div>
+								<!-- If answer is no, show openfield with label: Please suggest what can help you determine his/her writing ability? -->
+								<div class="question-wrapper" style="display: none" id="q23_text_wrapper">
+									<div class="question">Please suggest what can help you determine his/her writing ability</div>
+									<textarea id="q23_text" name="q23_text"></textarea>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<b>Read about how I solved a conflic with a friend!</b>
+								<div>
+									In order to move forward from the fight, the first step I took is to...(<a href="#">Click to see more</a>)
+								</div>
+								<!-- Q(Radio):Does example of candidate solving past social conflict helps you determine his/her conflic-solving ability?
+						Yes
+						No -->
+								<div class="question-wrapper">
+									<div class="question">Q24: Does example of candidate solving past social conflict helps you determine his/her conflic-solving ability?</div>
+									<div class="answer">A: Please select one</div>
+
+									<select id="q24" name="q24" style="max-width: 500px" onchange="toggleQuestion(this, 'q24_text_wrapper')">
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select>
+								</div>
+								<!-- If answer is no, show openfield with label: Please suggest what can help you determine his/her conflict-solving ability? -->
+								<div class="question-wrapper" style="display: none" id="q24_text_wrapper">
+									<div class="question">Please suggest what can help you determine his/her conflict-solving ability</div>
+									<textarea id="q24_text" name="q24_text"></textarea>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<b>Read my analysis on this chart</b>
+								<div>
+									<%=image_tag("graph.jpg", :class => "graph")%>
+										<div>
+											Based on the graph, the main takeaway is that sales have been...(<a href="#">Click to see more</a>)
+										</div>
+								</div>
+								<!-- Q(Radio):Does written analysis of a chart helps you determine his/her data analysis skills?
+						Yes
+						No -->
+								<div class="question-wrapper">
+									<div class="question">Q25: Does written analysis of a chart helps you determine his/her data analysis skills?</div>
+									<div class="answer">A: Please select one</div>
+
+									<select id="q25" name="q25" style="max-width: 500px" onchange="toggleQuestion(this, 'q25_text_wrapper')">
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select>
+								</div>
+								<!-- If answer is no, show openfield with label: Please suggest what can help you determine his/her data analysis ability? -->
+								<div class="question-wrapper" style="display: none" id="q25_text_wrapper">
+									<div class="question">Please suggest what can help you determine his/her data analysis ability</div>
+									<textarea id="q25_text" name="q25_text"></textarea>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<b>Read my creative answer to "How will you create value of an umbrella?"</b>
+								<div>
+									The first step is to make my umbrella unique. How I proposed to do this is by...(<a href="#">Click to see more</a>)
+								</div>
+								<!-- Q(Radio):Does written answer of candidate helps you determine his/her creative thinking ability?
+						Yes
+						No -->
+								<div class="question-wrapper">
+									<div class="question">Q26: Does written answer of candidate helps you determine his/her creative thinking ability?</div>
+									<div class="answer">A: Please select one</div>
+
+									<select id="q26" name="q26" style="max-width: 500px" onchange="toggleQuestion(this, 'q26_text_wrapper')">
+								<option value="Yes">Yes</option>
+								<option value="No">No</option>
+							</select>
+								</div>
+								<!-- If answer is no, show openfield with label: Please suggest what can help you determine his/her creative thinking ability? -->
+								<div class="question-wrapper" style="display: none" id="q26_text_wrapper">
+									<div class="question">Please suggest what can help you determine his/her creative thinking ability</div>
+									<textarea id="q26_text" name="q26_text"></textarea>
+								</div>
+							</div>
+						</div>
+
+						<!-- Q(1-5 for each line below):Which of these soft skills are important when you are shortlisting for interview?
+				Spoken Communication Skill
+				Written Communication Skill
+				Conflic-Solving Skill
+				Data Analysis Skill
+				Creative Thinking Skill
+				Negotiation Skills
+				-->
+						<div class="question-wrapper large">
+							<div class="question">Q27: Which of these soft skills are important when you are shortlisting for interview?</div>
+
+							<input name="q27" id='q27' type="hidden">
+
+							<div class="row">
+								<div class="col-md-4">
+									<input type="checkbox" name="q27_1" value="Spoken Communication Skill" id="q27_1"> Spoken Communication Skill
+								</div>
+
+								<div class="col-md-4">
+									<input type="checkbox" name="q27_2" value="Written Communication Skill" id="q27_2"> Written Communication Skill
+								</div>
+
+								<div class="col-md-4">
+									<input type="checkbox" name="q27_3" value="Conflic-Solving Skill" id="q27_3"> Conflic-Solving Skill
+								</div>
+
+								<div class="col-md-4">
+									<input type="checkbox" name="q27_4" value="Data Analysis Skill" id="q27_4"> Data Analysis Skill
+								</div>
+
+								<div class="col-md-4">
+									<input type="checkbox" name="q27_5" value="Creative Thinking Skill" id="q27_5"> Creative Thinking Skill
+								</div>
+
+								<div class="col-md-4">
+									<input type="checkbox" name="q27_6" value="Negotiation Skills" id="q27_6"> Negotiation Skills
+								</div>
+							</div>
+						</div>
+						<!-- Q(Open): Is there any other soft skill you would like to know when you are shortlisting for interview? (Open field) -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tab">
+			<!--Section: Personality-->
+			<div class="section section7">
+				<h1 class="section-title">Personality</h1>
+				<div class="section-container">
+					<div class="mb-3">
+						<h4>Personality 1 MBTI</h4>
+
+						<div class="mt-3"> As an ISTJ, candidate is a practical and rational. Candidate is always the reliable one in any team.
+							<!-- Q(1-5):How important is MBTI Personality summary when you are shortlisting for interview? -->
+
+							<div class="question-wrapper">
+								<div class="question">Q28: How important is MBTI Personality summary when you are shortlisting for interview?</div>
+								<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+								<select id="q28" name="q28" style="max-width: 500px">
+											<option value="1">1 (IRRELEVANT) </option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5 (VERY IMPORTANT) </option>
+									</select>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 mt-3">
+								<div><b>Introvert</b></div>
+								<!-- Q(1-5):How important is MBTI Personality type when you are shortlisting for interview? -->
+								<div class="question-wrapper">
+									<div class="question">Q29: How important is MBTI Personality type when you are shortlisting for interview?</div>
+									<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+									<select id="q29" name="q29" style="max-width: 500px">
+											<option value="1">1 (IRRELEVANT) </option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5 (VERY IMPORTANT) </option>
+							</select>
+								</div>
+								<div class="mt-2 number">90%</div>
+								<!-- Q(1-5):How important is MBTI Personality type score when you are shortlisting for interview? -->
+								<div class="question-wrapper">
+									<div class="question">Q30: How important is MBTI Personality type score when you are shortlisting for interview?</div>
+									<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+									<select id="q30" name="q30" style="max-width: 500px">
+											<option value="1">1 (IRRELEVANT) </option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5 (VERY IMPORTANT) </option>
+							</select>
+								</div>
+							</div>
+							<div class="col-md-6 mt-3">
+								<div><b>Sensing</b></div>
+								<div class="number">65%</div>
+							</div>
+							<div class="col-md-6 mt-3">
+								<div><b>Thinking</b></div>
+								<div class="number">80%</div>
+							</div>
+							<div class="col-md-6 mt-3">
+								<div><b>Judging</b></div>
+								<div class="number">51%</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="mt-3">
+						<h4>Personality 2 Customised</h4>
+						<div class="row">
+							<div class="col-md-6 mt-3">
+								<div><b>Desk Monkey</b>
+									<!-- Q(1-5):How important is Customised Personality when you are shortlisting for interview? -->
+
+									<div class="question-wrapper">
+										<div class="question">Q31: How important is Customised Personality when you are shortlisting for interview?</div>
+										<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+										<select id="q31" name="q31" style="max-width: 500px">
+												<option value="1">1 (IRRELEVANT) </option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5 (VERY IMPORTANT) </option>
+								</select>
+									</div>
+								</div>
+								<div class="number">90%</div>
+								<div>Candidate prefers to work on a desk over going out to do sales pitch. The interaction with machine and computer is
+									way more appealing than with human being.
+									<!-- Q(1-5):How important is Customised Personality explanation when you are shortlisting for interview? -->
+									<div class="question-wrapper">
+										<div class="question">Q32: How important is Customised Personality explanation when you are shortlisting for interview?</div>
+										<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+										<select id="q32" name="q32" style="max-width: 500px">
+												<option value="1">1 (IRRELEVANT) </option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5 (VERY IMPORTANT) </option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 mt-3">
+								<div><b>Loves Pattern</b></div>
+								<div class="number">70%</div>
+								<div>While creativity might not be candidate's strongest suite, candidate does love patterns. Candidate prefers to look
+									at chart and graph while finding useful meaning out of them.</div>
+							</div>
+							<div class="col-md-6 mt-3">
+								<div><b>Meticulous</b></div>
+								<div class="number">50%</div>
+								<div>Candidate believes strongly in "I would rather be late than missing out something ." Candidate is meticulous about
+									every tiny details in their life and work.</div>
+							</div>
+							<div class="col-md-6 mt-3">
+								<div><b>Money Controller</b></div>
+								<div class="number">40%</div>
+								<div>Candidate is not scared to take the responsibility to handle and manage money for others. Candidate is prudent and
+									believes that trust is hard to gain but easy to lose.</div>
+							</div>
+						</div>
+					</div>
+					<!--UI Notes:
+					1.The 2 parent divs should be side by side
+					2.For each parent div, it should be divided into 4 quartiles (2x2) with general/summary at the top of the 4 quartiles (For personality 1 mbti)-->
+					<!-- Q(Radio):Which of these Personality profile do you prefer when you are shortlisting for interview?
+				Must be MBTI (Left Side)
+				MBTI is slightly better (Left side)
+				Both are equally important
+				Customised Personality type is slightly better (Right side)
+				Must be Customised Personality type(Right side)
+				I don't need Personality information -->
+
+					<div class="question-wrapper large mt-4">
+						<div class="question">Q33: Which of these Personality profile do you prefer when you are shortlisting for interview?</div>
+
+
+						<div class="answer">A: Please select one</div>
+
+						<select id="q33" name="q33" style="max-width: 500px">
+							<option value="Must be MBTI">Must be MBTI</option>
+							<option value="MBTI is slightly better">MBTI is slightly better</option>
+							<option value="Both are equally important">Both are equally important</option>
+							<option value="Customised Personality type is slightly better">Customised Personality type is slightly better</option>
+							<option value="Must be Customised Personality type">Must be Customised Personality type</option>
+							<option value="I don't need Personality information">I don't need Personality information</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tab">
+			<!--Section: Personal Preferences-->
+			<div class="section section8">
+				<h1 class="section-title">Personal Preferences</h1>
+				<div class="section-container">
+					<div class="row">
+						<div class="col-md-6 mt-3 ">
+							<div class="alert alert-primary"><b>Strongly prefers traditional working hours to flexible working hours</b></div>
+						</div>
+						<div class="col-md-6 mt-3">
+							<div class="alert alert-info"><b>Can work anywhere in Malaysia</b></div>
+						</div>
+						<div class="col-md-6 mt-3">
+							<div class="alert alert-success"><b>Prefers big company with more than 100 workers to smaller/startup size companies</b></div>
+						</div>
+						<div class="col-md-6 mt-3">
+							<div class="alert alert-danger"><b>Prefers hardwork with minimal work-life-balance to balanced work-life culture</b></div>
+						</div>
+						<div class="col-md-6 mt-3">
+							<div class="alert alert-warning"><b>Strongly prefers official reporting structure to flexible & self-empowered KPI</b></div>
+						</div>
+					</div>
+					<!-- Q(1-5 for each of the lines below): Which of the above helps you when you are shortlisting for interview?
+			Working hours preference
+			Location preference
+			Company size preference
+			Company culture preference
+			Reporting Structure Preference -->
+					<div class="question-wrapper large">
+						<div class="question">Q34: Which of the above helps you when you are shortlisting for interview?</div>
+
+						<input name="q34" id='q34' type="hidden">
+
+						<div class="row">
+							<div class="col-md-4">
+								<input type="checkbox" name="q34_1" value="Working hours preference" id="q34_1"> Working hours preference
+							</div>
+
+							<div class="col-md-4">
+								<input type="checkbox" name="q34_2" value="Location preference" id="q34_2"> Location preference
+							</div>
+
+							<div class="col-md-4">
+								<input type="checkbox" name="q34_3" value="Company size preference" id="q34_3"> Company size preference
+							</div>
+
+							<div class="col-md-4">
+								<input type="checkbox" name="q34_4" value="Company culture preference" id="q34_4"> Company culture preference
+							</div>
+
+							<div class="col-md-4">
+								<input type="checkbox" name="q34_5" value="Reporting Structure Preference" id="q34_5"> Reporting Structure Preference
+							</div>
+						</div>
+
+					</div>
+					<!-- Q(Open): Please let us know any other personal preference information that is helpful when you are shortlisting for interview (Open field) -->
+
+					<div class="question-wrapper large">
+						<div class="question">Q35: Please let us know any other personal preference information that is helpful when you are shortlisting for interview</div>
+						<textarea id="q35" name="q35"></textarea>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div class="tab">
+			<!--Section: Jobtivity-->
+			<div class="section section9">
+				<h1 class="section-title">Jobtivity</h1>
+				<div class="section-container">
+					<div class="mb-3">
+						<div>
+							<h4 class="text-center">Knowledge</h4>
+							<div>Acquired more knowledge than <em class="number">80%</em> of other jobseekers</div>
+							<div>Consists of activites that help candidate gain a new knowledge such as reading a book or article, watching an education
+								youtube video, attending talks and seminars, etc.</div>
+							<!-- Q(1-5):How important is Knowledge Jobtivity when you are shortlisting for interview? -->
+
+							<div class="question-wrapper">
+								<div class="question">Q36: How important is Knowledge Jobtivity when you are shortlisting for interview?</div>
+								<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+								<select id="q36" name="q36" style="max-width: 500px">
+										<option value="1">1 (IRRELEVANT) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (VERY IMPORTANT) </option>
+						</select>
+							</div>
+						</div>
+						<div>
+							<div class="row">
+								<div class="col-md-4 mt-3">
+									<h6>Finance</h6>
+									<div>
+										Top Relevant Jobtivity
+										<div class="mt-2">Today, I learned about people using bitcoin as a way to crowdsource their financing need. Based on the article...</div>
+										<div>www.example.com</div>
+									</div>
+								</div>
+								<div class="col-md-4 mt-3">
+									<h6>Business Management</h6>
+									<div>Top Relevant Jobtivity
+										<div class="mt-2">From chapter 6 titled "Innovating a monster", I learned about how big corporation can ensure that they are always
+											innovating to stay ahead. Among proposed actions are...</div>
+										<div>Book: Innovation in a Digital Age by Mike Felman</div>
+									</div>
+								</div>
+								<div class="col-md-4 mt-3">
+									<h6>Automotive</h6>
+									<div>Top Relevant Jobtivity
+										<div class="mt-2">I find the tedtalk interesting because it explained how car still has a role to play in a world that focuses on
+											public transportation. The future trend with regards to automotive...</div>
+										<div>www.example.com</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Q(1-5):How important is the top 3 Knowledge of candidate when you are shortlisting for interview? -->
+
+							<div class="question-wrapper">
+								<div class="question">Q37: How important is the top 3 Knowledge of candidate when you are shortlisting for interview?</div>
+								<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+								<select id="q37" name="q37" style="max-width: 500px">
+										<option value="1">1 (IRRELEVANT) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (VERY IMPORTANT) </option>
+						</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+
+					<div class="mt-3 mb-3">
+						<div>
+							<h4 class="text-center">Personal Interests & Hobbies</h4>
+							<div>Pursuing their interests more actively than <em class="number">60%</em> of other jobseekers</div>
+							<div>Consists of activites that help candidate pursue their own interests such as writing, painting and photography as
+								well filling up their idle time with their hobbies such as gaming and going to events</div>
+							<!-- Q(1-5):How important is Personal Interests & Hobbies Jobtivity when you are shortlisting for interview? -->
+							<div class="question-wrapper">
+								<div class="question">Q38: How important is Personal Interests & Hobbies Jobtivity when you are shortlisting for interview?</div>
+								<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+								<select id="q38" name="q38" style="max-width: 500px">
+										<option value="1">1 (IRRELEVANT) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (VERY IMPORTANT) </option>
+						</select>
+							</div>
+						</div>
+						<div>
+							<div class="row">
+								<div class="col-md-4 mt-3">
+									<h6>Writing</h6>
+									<div>Top Relevant Jobtivity
+										<div class="mt-2">Today, I added a new blogpost about how to make sure young people like me to care about their spending and savings.
+											There are a lot of initiatives out there for personal finance but I think most of them are not attractive. </div>
+										<div>www.myblogpost.com</div>
+									</div>
+								</div>
+								<div class="col-md-4 mt-3">
+									<h6>Brain Games</h6>
+									<div>Top Relevant Jobtivity
+										<div class="mt-2">Today I beat my highscore for Memory on the app Peak. My effort to have more quality sleep must have been efficient!</div>
+										<div>
+											<%=image_tag("sammary_score.png", :class => "sammry_score")%>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 mt-3">
+									<h6>Researching</h6>
+									<div>Top Relevant Jobtivity
+										<div class="mt-2">Today I did some reseach on restaurants in Malaysia. Someone wanted to know whether small restaurants in Malaysia
+											are surviving more than 2 years. I learned of another useful research source which is...</div>
+									</div>
+								</div>
+							</div>
+							<!-- Q(1-5):How important is the top 3 interest & hobbies of candidate when you are shortlisting for interview? -->
+							<div class="question-wrapper">
+								<div class="question">Q39: How important is the top 3 interest & hobbies of candidate when you are shortlisting for interview?</div>
+								<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+								<select id="q39" name="q39" style="max-width: 500px">
+										<option value="1">1 (IRRELEVANT) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (VERY IMPORTANT) </option>
+						</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="mt-3 mb-3">
+						<div>
+							<h4 class="text-center">Organisational Strength</h4>
+							<div>Hone their organisation skills more actively than <em class="number">80%</em> of other jobseekers</div>
+							<div>Consists of team activities of which the candidates play a functional role (such as being a treasurer or a secretary)
+								or general role (such as project lead).</div>
+							<!-- Q(1-5):How important is Organisational Stength Jobtivity when you are shortlisting for interview? -->
+							<div class="question-wrapper">
+								<div class="question">Q40: How important is Organisational Stength Jobtivity when you are shortlisting for interview?</div>
+								<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+								<select id="q40" name="q40" style="max-width: 500px">
+										<option value="1">1 (IRRELEVANT) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (VERY IMPORTANT) </option>
+						</select>
+							</div>
+						</div>
+						<div>
+							<div class="row">
+								<div class="col-md-4 mt-3">
+									<h6>Bookkeeping</h6>
+									<div>Top Relevant Jobtivity
+										<div class="mt-2">After the event today, I had to complete the account for the event. This includes the neccessary spending related
+											directly and indirectly to the event. I also presented the current account summary to the President and the Vice
+											Chancellor
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 mt-3">
+									<h6>Team Management</h6>
+									<div>Top Relevant Jobtivity
+										<div class="mt-2">As I was entrusted to lead the fundraising team for our annual dinner, I had to assign 4 of my team members to
+											different corporate targets. I learned that based on our current ability, it is best to group into team of two
+											people instead of having 4 different teams</div>
+									</div>
+								</div>
+								<div class="col-md-4 mt-3">
+									<h6>Leadership</h6>
+									<div>Top Relevant Jobtivity
+										<div class="mt-2">Today, I was given the floor manager role for our corporate talk. I had to lead a team of 3 people on making sure
+											the run of events went smoothly. There were some arguments that required me to step up, and I believe leaders
+											must not avoid tough intervention</div>
+									</div>
+								</div>
+							</div>
+							<!-- Q(1-5):How important is the top 3 Organisational Strength of candidate when you are shortlisting for interview? -->
+							<div class="question-wrapper">
+								<div class="question">Q41: How important is the top 3 Organisational Strength of candidate when you are shortlisting for interview?</div>
+								<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+								<select id="q41" name="q41" style="max-width: 500px">
+										<option value="1">1 (IRRELEVANT) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (VERY IMPORTANT) </option>
+						</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="mt-3 mb-3">
+						<div>
+							<h4 class="text-center">Social</h4>
+							<div>Candidate is active in socialising more than <em class="number">20%</em> of other jobseekers</div>
+							<div>Consists of candidate social activities which involves friends or strangers. This includes playing sports, attending
+								social functions and networking with top individuals</div>
+							<!-- Q(1-5):How important is Social Jobtivity when you are shortlisting for interview? -->
+							<div class="question-wrapper">
+								<div class="question">Q42: How important is Social Jobtivity when you are shortlisting for interview?</div>
+								<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+								<select id="q42" name="q42" style="max-width: 500px">
+										<option value="1">1 (IRRELEVANT) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (VERY IMPORTANT) </option>
+						</select>
+							</div>
+						</div>
+						<div>
+							<div class="row">
+								<div class="col-md-4 mt-3">
+									<h6>Gaming</h6>
+									<div>Top Relevant Jobtivity
+										<div class="mt-2">Played with Warcraft with a few friends from university. Good game but I never wouldve known them if not for this
+											game. We are thinking of a startup idea one day!</div>
+									</div>
+								</div>
+								<div class="col-md-4 mt-3">
+									<h6>Concert</h6>
+									<div>Top Relevant Jobtivity
+										<div class="mt-2">Finally, got to see Radiohead in Kuala Lumpur. I reconnected with some of my high school friends who love Radiohead
+											as well. What annoyed me today? The traffic management system at the concert. It is 2017 already!</div>
+									</div>
+								</div>
+								<div class="col-md-4 mt-3">
+									<h6>Networked with Managing Partner of Ernst & Young Malaysia</h6>
+									<div>Top Relevant Jobtivity
+										<div class="mt-2">Went to Young Corporate Malaysians' event today. After the event, managed to chat with the guest speaker, Rauf
+											Rashid on career opportunity in EY. Braved myself to ask for his namecard and I got it! Will email him later today</div>
+									</div>
+								</div>
+							</div>
+							<!-- Q(1-5):How important is the top 3 Social Activity of candidate when you are shortlisting for interview? -->
+							<div class="question-wrapper">
+								<div class="question">Q43: How important is the top 3 Social Activity of candidate when you are shortlisting for interview?</div>
+								<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+								<select id="q43" name="q43" style="max-width: 500px">
+										<option value="1">1 (IRRELEVANT) </option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5 (VERY IMPORTANT) </option>
+						</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="divider"></div>
+
+					<div class="mt-3">
+						<div>
+							<h4 class="text-center">Other top Jobtivities</h4>
+						</div>
+						<div>
+							<div class="row">
+								<div class="col-md-6 mt-3">
+									<h6>Volunteering</h6>
+									<div>Top Relevant Jobtivity
+										<div class="mt-2">This is my fifth time volunteering at Old Folks' home. I connected again with Uncle Xin, who opened up and shared
+											about his only son. Today was very meaningful. Definitely not a wasted Sunday morning. </div>
+									</div>
+								</div>
+								<div class="col-md-6 mt-3">
+									<h6>Selling</h6>
+									<div>Top Relevant Jobtivity
+										<div class="mt-2">Helped a friend to sell his extra tickets to the Muse concert later. I found out that it is so easy to use Carousel,
+											I might use it after this!</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Q(1-5): How important is Jobtivity when you are shortlisting for interview? -->
+
+					<div class="question-wrapper large">
+						<div class="question">Q44: How important is Jobtivity when you are shortlisting for interview?</div>
+						<div class="answer">A: Please select one (1 is IRRELEVANT and 5 is VERY IMPORTANT)</div>
+
+						<select id="q44" name="q44" style="max-width: 500px">
+								<option value="1">1 (IRRELEVANT) </option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5 (VERY IMPORTANT) </option>
+				</select>
+					</div>
+
+					<!-- Q(Open): What other activity that fresh graduates might do which you find useful when you shortlist them for interview (3 open fields) -->
+
+					<div class="question-wrapper large">
+						<div class="question">Q45: What other activity that fresh graduates might do which you find useful when you shortlist them for interview?</div>
+						<div class="row">
+							<div class="col-md-4">
+								<textarea id="q45_1" name="q45_1"></textarea>
+							</div>
+							<div class="col-md-4">
+								<textarea id="q45_2" name="q45_2"></textarea>
+							</div>
+							<div class="col-md-4">
+								<textarea id="q45_3" name="q45_3"></textarea>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<div style="overflow:auto;" class="btn-wrapper">
+			<div style="float:right;">
+				<button type="button" id="prevBtn" onclick="nextPrev(-1)" class="next">Previous</button>
+				<button type="button" id="nextBtn" onclick="nextPrev(1)" class="next">Next</button>
+			</div>
+		</div>
+
+	</form>
+</div>
+
+<script>
+	$(document).ready(function () {
+		alert('Please ensure you answer all questions. Thank you');
+	})
+
+</script>

@@ -1,0 +1,260 @@
+.container {
+    max-width: 1400px;
+    //font-size: 20px;
+}
+
+.tab {
+    display: none;
+}
+
+select, input, textarea {
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: initial;
+    vertical-align: middle;
+}
+
+select, input {
+    height: 30px;
+}
+
+.section {
+    background-color: #e7e8ea;
+
+    .section-title {
+        margin-bottom: 0;
+    }
+
+    .section-container {
+       padding: 30px 20px;
+    }
+
+    .question-wrapper {
+        font-size: 15px;
+        padding-left: 15px;
+        margin-top: 10px;
+
+        .question {
+            color: red;
+        }
+
+        .answer {
+            margin-top: 6px;
+            color: green;
+        }
+    }
+}
+
+.section1 {
+    font-size: 23px;
+   
+    .section-title {
+        color: white;
+        background-color: #e951c5; 
+        text-align: center;
+    }
+    
+    .profile-image {
+        width: 170px;
+        opacity: 0.8;
+        border-radius: 100%;
+    }
+
+}
+
+.section2 {
+    background-color: #e7e8ea;
+    font-size: 21px;
+
+    .section-title {
+        color: white;
+        background-color: #56bff4; 
+        text-align: center;
+    }
+
+    .large {
+        font-size: 23px;
+    }
+
+    select {
+        max-width: 500px;
+    }
+
+    .question-wrapper.large {
+        margin-top: 25px;
+        font-size: 20px;
+        padding-left: 0px;
+    }
+
+}
+
+.section3 {
+    background-color: #e7e8ea;
+    font-size: 21px;
+
+    .section-title {
+        color: white;
+        background-color: green; 
+        text-align: center;
+    }
+
+    .question-wrapper.large {
+        margin-top: 25px;
+        font-size: 20px;
+        padding-left: 0px;
+    }
+}
+
+.section4 {
+    background-color: #e7e8ea;
+    font-size: 21px;
+
+    .section-title {
+        color: white;
+        background-color: red; 
+        text-align: center;
+    }
+
+    .question-wrapper.large {
+        margin-top: 25px;
+        font-size: 20px;
+        padding-left: 0px;
+    }
+}
+
+.section5 {
+    background-color: #e7e8ea;
+    font-size: 21px;
+
+    .section-title {
+        color: white;
+        background-color: #e951c5; 
+        text-align: center;
+    }
+
+    .question-wrapper.large {
+        margin-top: 25px;
+        font-size: 20px;
+        padding-left: 0px;
+    }
+}
+
+.section6 {
+    background-color: #e7e8ea;
+    font-size: 19px;
+
+    .section-title {
+        color: white;
+        background-color: #56bff4; 
+        text-align: center;
+    }
+
+    .question-wrapper.large {
+        margin-top: 25px;
+        font-size: 20px;
+        padding-left: 0px;
+    }
+}
+
+.section7 {
+    background-color: #e7e8ea;
+    font-size: 19px;
+
+    .section-title {
+        color: white;
+        background-color: green; 
+        text-align: center;
+    }
+
+    .question-wrapper.large {
+        margin-top: 25px;
+        font-size: 20px;
+        padding-left: 0px;
+    }
+
+    .number {
+        color: blue;
+    }
+}
+
+.section8 {
+    background-color: #e7e8ea;
+    font-size: 19px;
+
+    .section-title {
+        color: white;
+        background-color: red; 
+        text-align: center;
+    }
+
+    .question-wrapper.large {
+        margin-top: 25px;
+        font-size: 20px;
+        padding-left: 0px;
+    }
+}
+
+.section9 {
+    background-color: #e7e8ea;
+    font-size: 19px;
+
+    .section-title {
+        color: white;
+        background-color: #e951c5; 
+        text-align: center;
+    }
+
+    .question-wrapper.large {
+        margin-top: 25px;
+        font-size: 20px;
+        padding-left: 0px;
+    }
+
+    .number {
+        color: blue;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .sammry_score {
+        width: 100%;
+    }
+}
+
+button.next {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+button.next:hover {
+    opacity: 0.8;
+}
+
+.btn-wrapper {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.divider {
+    border-top: 1px solid gray;
+}
+
+.social-image {
+    width: 50px;
+}
+
+.small-logo {
+    height: 30px;
+}
+
+.graph {
+    width: 100%;
+}

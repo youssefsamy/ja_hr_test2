@@ -1,0 +1,55 @@
+<h1>You Can Export Responses To Excel By Click Bellow Button</h1>
+<a id="export" target="_self" download="answers.csv" style="display: none;">Link</a>
+<button onclick="exportToExcel()">Export to Excel</button>
+
+<script>
+    var answers = [];
+    $(document).ready(function () {
+        $.ajax({
+            method: 'get',
+            url: '/getQA'
+        }).then(function (res) {
+            if (res.success) answers = res.data;
+
+            getTime(answers[0].created_at);
+        })
+    })
+    function exportToExcel() {
+
+        let csv = 'Time,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16,Q17,Q18,Q19,Q20,Q21,Q22,Q22_Text,Q23,Q23_Text,Q24,Q24_Text,Q25,Q25_Text,Q26,Q26_Text,Q27,Q28,Q29,Q30,Q31,Q32,Q33,Q34,Q35,Q36,Q37,Q38,Q39,Q40,Q41,Q42,Q43,Q44,Q45_1,Q45_2,Q45_3\n';
+
+        for (let i = 0; i < this.answers.length; i++) {
+            let item = this.answers[i];
+            let row = [];
+            row.push(getTime(item.created_at));
+            row.push(item.q1); row.push(item.q2); row.push(item.q3); row.push(item.q4); row.push(item.q5);
+            row.push(item.q6); row.push(item.q7); row.push(item.q8); row.push(item.q9); row.push(item.q10);
+            row.push(item.q11); row.push(item.q12); row.push(item.q13); row.push(item.q14); row.push(item.q15);
+            row.push(item.q16); row.push(item.q17); row.push(item.q18); row.push(item.q19); row.push(item.q20);
+            row.push(item.q21); row.push(item.q22); row.push(item.q22_text); row.push(item.q23); row.push(item.q23_text);
+            row.push(item.q24); row.push(item.q24_text); row.push(item.q25); row.push(item.q25_text); row.push(item.q26);
+            row.push(item.q26_text); row.push(item.q27); row.push(item.q28); row.push(item.q29); row.push(item.q30);
+            row.push(item.q31); row.push(item.q32); row.push(item.q33); row.push(item.q34); row.push(item.q35);
+            row.push(item.q36); row.push(item.q37); row.push(item.q38); row.push(item.q39); row.push(item.q40);
+            row.push(item.q41); row.push(item.q42); row.push(item.q43); row.push(item.q44); row.push(item.q45_1);
+            row.push(item.q45_2); row.push(item.q45_3);
+
+
+            csv += row.join(',');
+            csv += "\n";
+        }
+
+
+        let hiddenElement = document.getElementById('export');
+        hiddenElement.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURI(csv));
+        hiddenElement.click();
+    }
+
+    function getTime(param) {
+        var time = new Date(param);
+        var result = time.toLocaleTimeString();
+        console.log(result);
+        return result;
+    }
+
+</script>
